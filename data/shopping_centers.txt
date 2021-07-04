@@ -1,0 +1,4 @@
+id;name;addr
+0;Tokyu Department Store;Dogenzaka,Sibuya-ku,Tokyo
+1;Seibu Shibuya Store;Utagawa,Sibuya-ku,Tokyo
+2;National Azabu;Minami Azabu,Minato-ku,Tokyo
