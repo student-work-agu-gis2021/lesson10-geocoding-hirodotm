@@ -140,11 +140,11 @@ pop=gpd.sjoin(pop,geodata,how='inner',op='intersects')
 grouped=pop.groupby('addr')
 for key, group in grouped:
   if key=="道玄坂, 円山町, 渋谷区, 東京都, 150-0044, 日本":
-    TDS=len(group)
+    TDS=round(group['PTN_2020'].sum())
   if key=="宇田川通り, 宇田川町, 渋谷区, 東京都, 150-0042, 日本":
-    SSS=len(group)
+    SSS=round(group['PTN_2020'].sum())
   if key=="日本東京神殿, 木下坂, 六本木六丁目, 南麻布五丁目, 麻布, 港区, 東京都, 106-0047, 日本":
-    NA=len(group)
+    NA=round(group['PTN_2020'].sum())
 
 # YOUR CODE HERE 11 to report how many people live within 1.5 km distance from each shopping center
 print(str(TDS)+" people live within 1.5 km from Tokyo Department Store")
